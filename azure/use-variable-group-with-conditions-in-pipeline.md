@@ -1,4 +1,4 @@
-#Use several variable groups with special condition
+### Use several variable groups with special condition
 
 To use a variable from a **variable group**, you need to add a reference to the group in your `YAML` file:
 
