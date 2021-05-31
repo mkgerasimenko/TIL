@@ -26,7 +26,7 @@ Also, we can install docker on any Linux platforms:
  
 #### Installing Docker on Mac With Homebrew Cask
 
-If you have Homebrew installed, you can execute the following command to install Docker:
+If you have ``Homebrew`` installed, you can execute the following command to install Docker:
 
 ```bash
 brew cask install docker
