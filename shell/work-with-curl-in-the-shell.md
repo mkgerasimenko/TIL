@@ -1,4 +1,4 @@
-##How to create a shell script with conditions, args, and variables.
+## How to create a shell script with conditions, args, and variables.
 
 The initial task for today's scripting is working with the ``shell``.  *The ``shell`` is a program that takes commands from the keyboard and gives them to the operating system to perform.*
 
@@ -15,7 +15,7 @@ Create a shell script which does the following:
 3. Sends a ``GET`` request to ``/image`` endpoint with the ``authorization header of Bearer`` type and the ``access_token`` value.
 4. Saves the response output to a file. Note that it's a ``.png`` image.
 
-###Docker installing
+### Docker installing
 
 Docker Desktop is available for Mac and Windows:
  - [Install Docker Desktop on Mac](https://docs.docker.com/docker-for-mac/install/)
@@ -24,7 +24,7 @@ Docker Desktop is available for Mac and Windows:
 Also, we can install docker on any Linux platforms:
  - [Install Docker on Linux](https://docs.docker.com/engine/install/#server)
  
-####Installing Docker on Mac With Homebrew Cask
+#### Installing Docker on Mac With Homebrew Cask
 
 If you have Homebrew installed, you can execute the following command to install Docker:
 
@@ -32,7 +32,7 @@ If you have Homebrew installed, you can execute the following command to install
 brew cask install docker
 ```
 
-###Pull an image or a repository from the Docker Hub
+### Pull an image or a repository from the Docker Hub
 
 To download a particular image, or set of images (i.e., a repository), use ``docker pull``. For our task we should use next: 
 
@@ -42,7 +42,7 @@ docker pull sskorol/http-playground
 
 Check out more about [docker pull here](https://docs.docker.com/engine/reference/commandline/pull/)
 
-###Run image as a docker-container
+### Run image as a docker-container
 
 Start the container and expose port 8000 to port 8000 on the host:
 
@@ -56,7 +56,7 @@ docker run --publish 8000:8000 sskorol/http-playground
 docker run -d -p 8000:8000 sskorol/http-playground
 ```
 
-###Create shell script
+### Create shell script
 
 Before the start of creation the script we should ``identify variables`` for easier programming.
 
@@ -68,7 +68,7 @@ Before the start of creation the script we should ``identify variables`` for eas
  - **json_response** -> Response from ``POST`` request
  - **login_failed_message** -> Error message during login
  
-####Send ``POST`` request to the ``/auth`` path
+#### Send ``POST`` request to the ``/auth`` path
 
 ```bash
 curl -X POST -F 'username=mkgerasimenko' -F 'password=secret' http://localhost:8000/auth
@@ -110,7 +110,7 @@ curl -X POST -F 'username=mkgerasimenko' -F 'password=secret' http://localhost:8
 [ -z "$access_token" ] && { echo "WARNING: Access token is empty"; exit 1; }
 ```
 
-###Send `GET` request to the ``/image`` and save response image to a ``.file``
+### Send `GET` request to the ``/image`` and save response image to a ``.file``
 
 ```bash
 curl -H "Authorization: Bearer $access_token" "$url_image" >> "$image_name.png"
@@ -118,7 +118,7 @@ curl -H "Authorization: Bearer $access_token" "$url_image" >> "$image_name.png"
 
 The image will download to the directory in which the script was executed.
 
-###The final outcome
+### The final outcome
 
 ```bash
 #!/bin/bash
@@ -151,7 +151,7 @@ echo "====> Image saved successfully"
 
 Also, the ``github_id_img.sh`` is available in the attachments
 
-###Run the script
+### Run the script
 
 Before running the shell-script we should get permissions to it:
 
@@ -165,7 +165,7 @@ Run the script with two args:
 ./github_id_img.sh username image_name
 ```
 
-####For more information about this topic, please use the links below: 
+#### For more information about this topic, please use the links below: 
 
 [Shell scripting](https://www.tutorialkart.com/bash-shell-scripting/bash-date-format-options-examples/) \
 [Docker overview](https://docs.docker.com/get-started/overview/) \
