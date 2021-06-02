@@ -203,20 +203,20 @@ fi
 echo "====> Image saved successfully"
 ```
 
-Also, the `github_id_img.sh` is available [here](https://github.com/mkgerasimenko/TIL/blob/main/shell/github_id_img.sh)
+Also, the `download_image.sh` is available [here](https://github.com/mkgerasimenko/TIL/blob/main/shell/github_id_img.sh)
 
 ### Run the script
 
 Before running the shell-script we should get permissions to it:
 
 ```bash
-chmod 755 github_id_img.sh
+chmod 755 download_image.sh
 ```
 
 Run the script with two args:
 
 ```bash
-./github_id_img.sh username image_name
+./download_image.sh username image_name
 ```
 
 #### For more information about this topic, please use the links below: 
