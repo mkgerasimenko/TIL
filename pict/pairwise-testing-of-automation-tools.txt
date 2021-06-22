@@ -1,0 +1,37 @@
+Application Type:     Web, Mobile Native, Hybrid
+Mobile Platform:      iOS, Android,  ,
+Browser:              Chrome, Firefox, Safari,  ,
+Programming Language: Java, JS, Python, Swift, C#
+Unit Framework:       TestNG, JUnit, Mocha, Jest, Jasmine, PyTest, Unittest, Nose2, xUnit,  ,
+Web Frameworks:       Selenide, Serenity, WebdriverIO, Cypress, CodeceptJS, Puppeteer, Playwright, Helium,  ,
+Mobile Frameworks:    Appium, Espresso, XCUITest, Detox, Xamarin,  ,
+Infrastructure:       Selenium Grid, Selenoid
+
+# Restrictions for Application type
+IF [Application Type] in {"Mobile Native", "Hybrid"} THEN [Browser] = "" AND [Web Frameworks] = "" AND NOT [Mobile Frameworks] = "";
+IF [Application Type] = "Web" THEN NOT [Browser] = "" AND [Mobile Platform] = "" AND [Mobile Frameworks] = "" AND NOT [Web Frameworks] = "";
+IF [Application Type] in {"Mobile Native", "Hybrid"} THEN NOT [Mobile Platform] = "";
+
+# Web Frameworks restrictions for Programming language
+IF [Programming Language] = "Java" AND [Application Type] = "Web" THEN  [Web Frameworks] in {"Playwright", "Selenide", "Serenity"};
+IF [Programming Language] = "JS" AND [Application Type] = "Web" THEN  [Web Frameworks] in {"WebdriverIO", "Cypress", "CodeceptJS", "Puppeteer", "Playwright"};
+IF [Programming Language] = "Python" AND [Application Type] = "Web" THEN  [Web Frameworks] in {"Playwright", "Helium"};
+IF [Programming Language] = "C#" AND [Application Type] = "Web" THEN  [Web Frameworks] in { "Playwright"};
+
+# Unit Frameworks restrictions for Programming language
+IF [Programming Language] = "Java" THEN [Unit Framework] in {"TestNG", "JUnit"} AND NOT [Unit Framework] = "";
+IF [Programming Language] = "JS" THEN [Unit Framework] in {"Mocha", "Jest", "Jasmine"} AND NOT [Unit Framework] = "";
+IF [Programming Language] = "Python" THEN [Unit Framework] in {"PyTest", "Nose2", "Unittest"} AND NOT [Unit Framework] = "";
+IF [Programming Language] = "Swift" THEN [Unit Framework] = "" AND NOT [Application Type] = "Web";
+IF [Programming Language] = "C#" THEN [Unit Framework] in {"xUnit"} AND NOT [Unit Framework] = "";
+
+# Mobile Frameworks restrictions for Programming language
+IF [Mobile Frameworks] = "Appium" THEN [Programming Language] in {"Java", "JS", "Python", "C#"};
+IF [Mobile Frameworks] = "Espresso" THEN NOT [Mobile Platform] = "iOS" AND [Programming Language] = "Java";
+IF [Mobile Frameworks] = "Detox" THEN [Programming Language] = "JS" AND NOT [Unit Framework] = "Mocha" AND [Application Type] = "Mobile Native";
+IF [Mobile Frameworks] = "XCUITest" THEN [Programming Language] = "Swift" AND [Mobile Platform] = "iOS" AND NOT [Application Type] = "Hybrid";
+IF [Mobile Frameworks] = "Xamarin" THEN [Programming Language] = "C#";
+
+# Unique restrictions
+IF [Web Frameworks] in {"Helium", "CodeceptJS", "Cypress", "Serenity"} THEN NOT [Browser] = "Safari";
+IF [Web Frameworks] = "Puppeteer" THEN [Browser] = "Chrome";

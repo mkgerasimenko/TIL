@@ -1,0 +1,172 @@
+[
+  {
+    "Application Type":  "Web",
+    "Mobile Platform":  "",
+    "Browser":  "Chrome",
+    "Programming Language":  "Python",
+    "Unit Framework":  "PyTest",
+    "Web Frameworks":  "Playwright",
+    "Mobile Frameworks":  "",
+    "Infrastructure":  "Selenium Grid"
+  },
+  {
+    "Application Type":  "Hybrid",
+    "Mobile Platform":  "Android",
+    "Browser":  "",
+    "Programming Language":  "JS",
+    "Unit Framework":  "Mocha",
+    "Web Frameworks":  "",
+    "Mobile Frameworks":  "Appium",
+    "Infrastructure":  "Selenoid"
+  },
+  {
+    "Application Type":  "Mobile Native",
+    "Mobile Platform":  "iOS",
+    "Browser":  "",
+    "Programming Language":  "Swift",
+    "Unit Framework":  "",
+    "Web Frameworks":  "",
+    "Mobile Frameworks":  "XCUITest",
+    "Infrastructure":  "Selenoid"
+  },
+  {
+    "Application Type":  "Mobile Native",
+    "Mobile Platform":  "iOS",
+    "Browser":  "",
+    "Programming Language":  "JS",
+    "Unit Framework":  "Jasmine",
+    "Web Frameworks":  "",
+    "Mobile Frameworks":  "Detox",
+    "Infrastructure":  "Selenium Grid"
+  },
+  {
+    "Application Type":  "Web",
+    "Mobile Platform":  "",
+    "Browser":  "Firefox",
+    "Programming Language":  "Java",
+    "Unit Framework":  "JUnit",
+    "Web Frameworks":  "Selenide",
+    "Mobile Frameworks":  "",
+    "Infrastructure":  "Selenium Grid"
+  },
+  {
+    "Application Type":  "Mobile Native",
+    "Mobile Platform":  "Android",
+    "Browser":  "",
+    "Programming Language":  "Python",
+    "Unit Framework":  "Unittest",
+    "Web Frameworks":  "",
+    "Mobile Frameworks":  "Appium",
+    "Infrastructure":  "Selenoid"
+  },
+  {
+    "Application Type":  "Web",
+    "Mobile Platform":  "",
+    "Browser":  "Chrome",
+    "Programming Language":  "JS",
+    "Unit Framework":  "Jest",
+    "Web Frameworks":  "Puppeteer",
+    "Mobile Frameworks":  "",
+    "Infrastructure":  "Selenium Grid"
+  },
+  {
+    "Application Type":  "Web",
+    "Mobile Platform":  "",
+    "Browser":  "Chrome",
+    "Programming Language":  "JS",
+    "Unit Framework":  "Jest",
+    "Web Frameworks":  "CodeceptJS",
+    "Mobile Frameworks":  "",
+    "Infrastructure":  "Selenium Grid"
+  },
+  {
+    "Application Type":  "Hybrid",
+    "Mobile Platform":  "iOS",
+    "Browser":  "",
+    "Programming Language":  "Java",
+    "Unit Framework":  "TestNG",
+    "Web Frameworks":  "",
+    "Mobile Frameworks":  "Appium",
+    "Infrastructure":  "Selenoid"
+  },
+  {
+    "Application Type":  "Web",
+    "Mobile Platform":  "",
+    "Browser":  "Chrome",
+    "Programming Language":  "Python",
+    "Unit Framework":  "Nose2",
+    "Web Frameworks":  "Helium",
+    "Mobile Frameworks":  "",
+    "Infrastructure":  "Selenium Grid"
+  },
+  {
+    "Application Type":  "Web",
+    "Mobile Platform":  "",
+    "Browser":  "Firefox",
+    "Programming Language":  "Java",
+    "Unit Framework":  "TestNG",
+    "Web Frameworks":  "Serenity",
+    "Mobile Frameworks":  "",
+    "Infrastructure":  "Selenoid"
+  },
+  {
+    "Application Type":  "Web",
+    "Mobile Platform":  "",
+    "Browser":  "Firefox",
+    "Programming Language":  "JS",
+    "Unit Framework":  "Mocha",
+    "Web Frameworks":  "Cypress",
+    "Mobile Frameworks":  "",
+    "Infrastructure":  "Selenium Grid"
+  },
+  {
+    "Application Type":  "Mobile Native",
+    "Mobile Platform":  "Android",
+    "Browser":  "",
+    "Programming Language":  "Java",
+    "Unit Framework":  "JUnit",
+    "Web Frameworks":  "",
+    "Mobile Frameworks":  "Espresso",
+    "Infrastructure":  "Selenium Grid"
+  },
+  {
+    "Application Type":  "Web",
+    "Mobile Platform":  "",
+    "Browser":  "Safari",
+    "Programming Language":  "C#",
+    "Unit Framework":  "xUnit",
+    "Web Frameworks":  "Playwright",
+    "Mobile Frameworks":  "",
+    "Infrastructure":  "Selenoid"
+  },
+  {
+    "Application Type":  "Web",
+    "Mobile Platform":  "",
+    "Browser":  "Safari",
+    "Programming Language":  "JS",
+    "Unit Framework":  "Mocha",
+    "Web Frameworks":  "WebdriverIO",
+    "Mobile Frameworks":  "",
+    "Infrastructure":  "Selenoid"
+  },
+  {
+    "Application Type":  "Mobile Native",
+    "Mobile Platform":  "iOS",
+    "Browser":  "",
+    "Programming Language":  "Swift",
+    "Unit Framework":  "",
+    "Web Frameworks":  "",
+    "Mobile Frameworks":  "XCUITest",
+    "Infrastructure":  "Selenium Grid"
+  },
+  {
+    "Application Type":  "Hybrid",
+    "Mobile Platform":  "Android",
+    "Browser":  "",
+    "Programming Language":  "C#",
+    "Unit Framework":  "xUnit",
+    "Web Frameworks":  "",
+    "Mobile Frameworks":  "Xamarin",
+    "Infrastructure":  "Selenium Grid"
+  }
+]

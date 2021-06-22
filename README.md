@@ -19,6 +19,7 @@ Saving any pieces of knowledge into `GitHub` - **good practice!**
 
  * [Azure](#azure)
  * [Shell](#shell)
+ * [PICT](#pict)
 
 ***
 
@@ -29,4 +30,8 @@ Saving any pieces of knowledge into `GitHub` - **good practice!**
 ### Shell
 
  - [Use conditions, args, and variables](shell/work-with-curl-in-the-shell.md)
+ 
+### PICT
+
+ - [How to use Pairwise Independent Combinatorial Testing tool](pict/pairwise-testing-model.md)
  
